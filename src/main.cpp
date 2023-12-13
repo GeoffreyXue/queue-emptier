@@ -48,8 +48,8 @@ int main() {
     receive_request.SetQueueUrl(kQueueUrlToEmpty);
     receive_request.SetMaxNumberOfMessages(
         10); // Max number of messages to receive
-    receive_request.SetVisibilityTimeout(30); // Visibility timeout
-    receive_request.SetWaitTimeSeconds(20);   // Long polling wait time
+    receive_request.SetVisibilityTimeout(5); // Visibility timeout
+    receive_request.SetWaitTimeSeconds(5);   // Long polling wait time
 
     // Receive the message
 
